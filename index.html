@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azalia — Кофейня</title>
+  <meta name="description" content="Azalia — кофе с лучшим вкусом. Меню, акции, отзывы и подписка." />
+
+  <meta property="og:title" content="Azalia — кофейня с авторским кофе">
+  <meta property="og:description"
+        content="Azalia — уютная кофейня с ароматным кофе, авторскими напитками и приятной атмосферой. Ознакомьтесь с меню и отзывами клиентов.">
+  <meta property="og:image" content="images/загруженное.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Azalia",
+    "image": "https://example.com/images/загруженное.jpg",
+    "url": "https://example.com",
+    "telephone": "+7-987-000-67-78",
+    "email": "azalia@mail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Московское шоссе 122",
+      "addressLocality": "Самара",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 09:00-22:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Путешествие в мир кофе",
+    "datePublished": "2026-05-15",
+    "author": {
+      "@type": "Person",
+      "name": "Илья Лосев"
+    },
+    "image": "https://example.com/images/Maskgroup.png",
+    "description": "Статья о мире кофе, его вкусе, атмосфере и пользе качественного напитка."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Капучино",
+    "image": "https://example.com/images/Rectangle9.png",
+    "description": "Классический кофейный напиток с молочной пеной.",
+    "offers": {
+      "@type": "Offer",
+      "price": "250",
+      "priceCurrency": "RUB",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "24"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <div class="hero__overlay"></div>
+
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="#home" aria-label="Azalia">
+          <span class="brand__logo">Azalia</span>
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню"
+                aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="site-nav">
+          <a class="nav__link" href="#home">Главная</a>
+          <a class="nav__link" href="#menu">Меню</a>
+          <a class="nav__link" href="about.html">О кофейне</a>
+          <a class="nav__link" href="#reviews">Отзывы</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+          <a class="nav__btn" href="#signup">Подписка</a>
+        </nav>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__kicker">Отличное начало дня начинается с</p>
+        <h1 class="hero__title">Azalia</h1>
+        <p class="hero__text">
+          Откройте для себя кофе с лучшим вкусом, который вас вдохновляет.
+          Мы предлагаем нашим клиентам только самое лучшее.
+        </p>
+
+        <a class="btn btn--primary" href="#menu">Заказать</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section"
+             id="about"
+             itemscope
+             itemtype="https://schema.org/Article">
+      <meta itemprop="datePublished" content="2026-05-15">
+      <meta itemprop="author" content="Илья Лосев">
+
+      <div class="container about">
+        <div class="about__text">
+          <h2 class="h2" itemprop="headline">Путешествие в мир кофе</h2>
+          <p class="muted" itemprop="articleBody">
+            Мы предлагаем вам качественный кофе, который помогает улучшить продуктивность и поднимает настроение.
+            Выпить чашечку кофе — это хорошо, но ещё лучше выпить чашечку настоящего кофе.
+          </p>
+          <a class="btn btn--primary btn--soft" href="#menu">Узнать больше</a>
+        </div>
+
+        <div class="about__media">
+          <img class="about__img"
+               src="images/Maskgroup.png"
+               alt="Кофейные зёрна в форме чашки"
+               itemprop="image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="menu">
+      <div class="container">
+        <div class="center">
+          <h2 class="h2">Открой для себя лучший кофе</h2>
+          <p class="muted">Всегда найдётся новая чашка, которую стоит попробовать.</p>
+        </div>
+
+        <div class="grid grid--4">
+
+          <article class="card" itemscope itemtype="https://schema.org/Product">
+            <img class="card__img"src="images/Rectangle9.png"srcset="
+              images/Rectangle9.png 320w,
+              images/Rectangle9.png 480w,
+              images/Rectangle9.png 800w"
+
+            sizes="
+              (max-width: 320px) 280px,
+              (max-width: 480px) 440px,
+              800px"alt="Капучино — кофейный напиток с молочной пеной">
+            <meta itemprop="brand" content="Azalia">
+            <div class="card__body">
+              <h3 class="card__title" itemprop="name">Капучино</h3>
+              <p class="card__meta" itemprop="description">Coffee 60% | Milk 40%</p>
+
+              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p class="card__price">
+                  от <span itemprop="price">250</span> ₽
+                </p>
+                <meta itemprop="priceCurrency" content="RUB">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </div>
+
+              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="4.8">
+                <meta itemprop="reviewCount" content="24">
+              </div>
+              <a class="btn btn--small btn--primary btn--soft"
+                 href="#contacts"
+                 itemprop="url">
+                 Заказать
+              </a>
+            </div>
+          </article>
+
+          <article class="card" itemscope itemtype="https://schema.org/Product">
+            <img class="card__img" src="images/Rectangle11.png" alt="Чай латте" itemprop="image">
+            <meta itemprop="brand" content="Azalia">
+            <div class="card__body">
+              <h3 class="card__title" itemprop="name">Чай латте</h3>
+              <p class="card__meta" itemprop="description">Coffee 40% | Milk 60%</p>
+
+              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p class="card__price">
+                  от <span itemprop="price">280</span> ₽
+                </p>
+                <meta itemprop="priceCurrency" content="RUB">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </div>
+
+              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="4.7">
+                <meta itemprop="reviewCount" content="18">
+              </div>
+
+              <a class="btn btn--small btn--primary btn--soft"
+                 href="#contacts"
+                 itemprop="url">
+                 Заказать
+              </a>
+            </div>
+          </article>
+
+          <article class="card" itemscope itemtype="https://schema.org/Product">
+            <img class="card__img" src="images/Rectangle13.png" alt="Макиато" itemprop="image">
+            <meta itemprop="brand" content="Azalia">
+            <div class="card__body">
+              <h3 class="card__title" itemprop="name">Макиато</h3>
+              <p class="card__meta" itemprop="description">Coffee 70% | Milk 30%</p>
+
+              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p class="card__price">
+                  от <span itemprop="price">250</span> ₽
+                </p>
+                <meta itemprop="priceCurrency" content="RUB">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </div>
+
+              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="4.9">
+                <meta itemprop="reviewCount" content="16">
+              </div>
+
+              <a class="btn btn--small btn--primary btn--soft"
+                 href="#contacts"
+                 itemprop="url">
+                 Заказать
+              </a>
+            </div>
+          </article>
+
+          <article class="card" itemscope itemtype="https://schema.org/Product">
+            <img class="card__img" src="images/Rectangle9.png" alt="Эспрессо" itemprop="image">
+            <meta itemprop="brand" content="Azalia">
+            <div class="card__body">
+              <h3 class="card__title" itemprop="name">Эспрессо</h3>
+              <p class="card__meta" itemprop="description">Coffee 90% | Milk 10%</p>
+
+              <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <p class="card__price">
+                  от <span itemprop="price">230</span> ₽
+                </p>
+                <meta itemprop="priceCurrency" content="RUB">
+                <link itemprop="availability" href="https://schema.org/InStock">
+              </div>
+
+              <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <meta itemprop="ratingValue" content="4.8">
+                <meta itemprop="reviewCount" content="21">
+              </div>
+
+              <a class="btn btn--small btn--primary btn--soft"
+                 href="#contacts"
+                 itemprop="url">
+                 Заказать
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--beige">
+      <div class="container">
+        <div class="center">
+          <h2 class="h2">Почему выбирают нас?</h2>
+          <p class="muted">Мы не просто готовим вам кофе, мы создаём вам день!</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <img class="feature__icon" src="images/Group29.png" alt="Иконка качества кофейных зерен">
+            <h3 class="feature__title">Качество сырья</h3>
+          </div>
+          <div class="feature">
+            <img class="feature__icon" src="images/Group31.png" alt="Иконка высокого уровня сервиса">
+            <h3 class="feature__title">Лучший сервис</h3>
+          </div>
+          <div class="feature">
+            <img class="feature__icon" src="images/Group32.png" alt="Иконка уникальных кофейных напитков">
+            <h3 class="feature__title">Уникальность</h3>
+          </div>
+          <div class="feature">
+            <img class="feature__icon" src="images/Group33.png" alt="Иконка доступной цены на кофе">
+            <h3 class="feature__title">Доступные цены</h3>
+          </div>
+        </div>
+
+        <div class="cta">
+          <p class="muted">Отличные цены начинаются с отличного кофе. Давайте начнём?</p>
+          <a class="btn btn--primary btn--soft" href="#signup">Присоединиться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo__overlay"></div>
+      <div class="container promo__grid">
+        <div class="promo__text">
+          <h2 class="promo__title">Покупай кофе<br>выгоднее</h2>
+          <p class="promo__desc">10% с каждой покупки начисляется<br>на бонусный счёт</p>
+          <a class="btn btn--primary" href="#signup">Регистрация</a>
+        </div>
+        <div class="promo__cup"></div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="center">
+          <h2 class="h2">Отзывы о нашем идеальном кофе</h2>
+          <p class="muted">Наши клиенты могут рассказать о нас удивительные вещи</p>
+        </div>
+
+        <div class="testimonial">
+          <button class="slider-btn" type="button" data-prev aria-label="Предыдущий отзыв">‹</button>
+
+          <article class="testimonial__card"
+                   itemscope
+                   itemtype="https://schema.org/Review"
+                   aria-live="polite">
+
+            <meta itemprop="datePublished" content="2026-05-15">
+
+            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Product">
+<meta itemprop="name" content="Кофе Azalia">
+
+<div itemprop="aggregateRating"
+     itemscope
+     itemtype="https://schema.org/AggregateRating">
+
+<meta itemprop="ratingValue" content="4.9">
+<meta itemprop="reviewCount" content="32">
+
+</div>
+
+</div>
+
+            <div class="quote">“</div>
+
+            <p class="testimonial__text" id="tText" itemprop="reviewBody">
+              Кофе превзошёл все ожидания. Попробовала эспрессо – напиток оказался насыщенным, с приятной горчинкой и богатым ароматом.
+            </p>
+
+            <div class="testimonial__name" id="tName" itemprop="author">Лосев Илья</div>
+
+            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">
+              <meta itemprop="bestRating" content="5">
+            </div>
+
+            <div class="testimonial__avatar">
+              <img id="tAvatar"
+                   src="images/orig.jpg"
+                   alt="Фото клиента кофейни Azalia"
+                   itemprop="image">
+            </div>
+          </article>
+
+          <button class="slider-btn" type="button" data-next aria-label="Следующий отзыв">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="signup">
+      <div class="newsletter__overlay"></div>
+      <div class="container newsletter__inner">
+        <h2 class="newsletter__title">Подпишитесь, чтобы получать<br>последние новости</h2>
+
+        <form class="newsletter__form" action="#" method="post" onsubmit="return false;">
+          <input name="email" type="email" placeholder="Введите ваш email" required>
+          <button class="btn btn--primary" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__bg"></div>
+
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">Azalia</div>
+        <p class="footer__text">
+          Что-то умное
+        </p>
+        <div class="social">
+          <a href="#" aria-label="VK">VK</a>
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">О нас</h3>
+        <a href="#about">Меню</a>
+        <a href="#reviews">Новости</a>
+        <a href="#signup">Подписка</a>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Компания</h3>
+        <a href="#">Как мы работаем</a>
+        <a href="#">Условия</a>
+        <a href="#">Обслуживание</a>
+      </div>
+
+      <div class="footer__col"
+           itemscope
+           itemtype="https://schema.org/CafeOrCoffeeShop">
+
+        <h3 class="footer__title" itemprop="name">Azalia</h3>
+
+        <p itemprop="address"
+           itemscope
+           itemtype="https://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Самара</span>,
+          <span itemprop="streetAddress">Московское шоссе 122</span>
+        </p>
+
+        <p>
+          Телефон:
+          <span itemprop="telephone">+7 (987) 000-67-78</span>
+        </p>
+
+        <p>
+          Email:
+          <span itemprop="email">azalia@mail.com</span>
+        </p>
+
+        <p>
+          Время работы:
+          <span itemprop="openingHours">Пн–Вс 09:00–22:00</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© 2026 Azalia. Все права защищены.</p>
+      <a class="to-top" href="#home">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
